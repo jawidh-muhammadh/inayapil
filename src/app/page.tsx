@@ -2,7 +2,7 @@
 import { Input, Textarea } from '@heroui/react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase';
 //  useInView
