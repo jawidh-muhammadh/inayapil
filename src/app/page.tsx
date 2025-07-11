@@ -332,10 +332,8 @@ export default function Home() {
           {statusMessage && (
             <div
               className={`${
-                statusType === 'Message sent successfully!'
-                  ? 'text-green-400'
-                  : 'text-red-400'
-              } text-center mt-3 block mb-4`}
+                statusType === 'success' ? 'text-green-900' : 'text-red-900'
+              } text-center mt-3 font-semibold block mb-4`}
             >
               {statusMessage}
             </div>
