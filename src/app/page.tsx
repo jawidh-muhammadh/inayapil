@@ -7,7 +7,7 @@ import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase';
 //  useInView
 export default function Home() {
-  const ref = useRef(null);
+  // const ref = useRef(null);
   // const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const [formData, setFormData] = useState({
@@ -232,8 +232,8 @@ export default function Home() {
           Coming Soon
         </h1>
         <p className="text-lg text-gray-300 max-w-md font-raleway">
-          We're working hard to launch our website. Leave us a message, and
-          we’ll get back to you!
+          {`We're working hard to launch our website. Leave us a message, and
+          we’ll get back to you!`}
         </p>
       </div>
 
