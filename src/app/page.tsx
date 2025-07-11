@@ -26,7 +26,7 @@ export default function Home() {
   const [statusType, setStatusType] = useState(''); // 'success' or 'error
 
   const [btnloading, setbtnloading] = useState(false);
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setbtnloading(true);
     console.log('clciked');
