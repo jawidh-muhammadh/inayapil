@@ -1,14 +1,14 @@
 'use client';
 import { Input, Textarea } from '@heroui/react';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useRef, useState } from 'react';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase';
-
+//  useInView
 export default function Home() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  // const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const [formData, setFormData] = useState({
     name: '',
